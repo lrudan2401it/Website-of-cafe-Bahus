@@ -1,0 +1,152 @@
+#about-info{
+    height: 600px;
+    padding-top: 30px;
+}
+
+#about-info .info-left{
+    float: left;
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info h1{
+    font-size: 60px;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#about-info #pelja{
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color: rgb(219, 219, 219);
+}
+
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    height: 550px;
+    width: 750px;
+    border-radius: 50%;
+}
+
+
+
+
+
+#istorija{
+    height: 400px;
+}
+
+#istorija .boks1 img{
+    float: left;
+    width: 33.33%;
+    height: 400px;
+}
+
+#istorija .boks2{
+    font-size: small;
+    float: left;
+    height: 400px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.boja{
+    color: rgb(244, 154, 58);
+}
+
+#istorija .boks2 p{
+    line-height: normal;
+    padding: 25px;
+    font-size: 13px;
+    
+}
+
+#istorija .boks2 h3{
+    font-size: xx-large;
+    padding-top: 25px;
+}
+
+#istorija .boks2 .pasus{
+    padding: 25px;
+    color: rgb(199, 40, 0);
+    font-size: small;
+    line-height: 1.7em;
+}
+
+#istorija .boks3 img{
+    float: right;
+    height: 400px;
+    width: 33.33%;
+}
+
+
+
+
+.recenzije{
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+.recenzije .slika{
+    content: "";
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/*.recenzije .slika:hover::before{
+    opacity: 1;
+}*/
+
+.recenzije h4{
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    font-size: xx-large;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    z-index: 3;
+}
+
+.recenzije h4 .naslov{
+    text-decoration: underline;
+}
+
+.recenzije .iznad img{
+    z-index: 2;
+    width: 450px;
+    height: 275px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    opacity: 0.85;
+}
+
+.recenzije .iznad .levo{
+    position: absolute;
+    z-index: 2;
+}
+
+.recenzije .iznad .desno{
+    padding-top: 280px;
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact/contact.css">
+    <script src="https://kit.fontawesome.com/a82224131d.js" crossorigin="anonymous"></script>
+    <title>BAHUS | Kontakt</title>
+    <script src="dinamickiMeni.js"></script>
+</head>
+<body onload="initialize()">
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a class="current" href="index.html"><img src="image/index/IMG_20191007_212730_265.jpg"></a>
+                </div>
+                <ul>
+                    <li><a href="about.html">O nama</span></a></li>
+                    <li><a href="drinkfood.html">Karta pića i Roštilj</span></a></li>
+                    <li>
+                        <span class="menu-item">
+                            FOTOGRAFIJE
+                            <ul>
+                                <span class="submenu manji">
+                                    <li><a href="photoStare.html"><div>Stare fotografije</div></a></li>
+                                    <li><a href="photoGosti.html"><div>Naši gosti</div></a></li>
+                                    <li><a href="photoKviz.html"><div>Kvizovi</div></a></li>
+                                    <li><a href="photoIzlasci.html"><div>Izlasci 2020.</div></a></li>
+                                    <li><a href="photoZurka.html"><div>Žurka: 11.02.2020.</div></a></li>
+                                </span>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="menu-item">
+                            ZMAJEVO
+                            <ul>
+                                <span class="submenu veci">
+                                    <li><a href="zmajevoIstorija.html"><div>Kratak pregled istorije</div></a></li>
+                                    <li><a href="zmajevoNaselje.html"><div>Naselje i položaj naselja</div></a></li>
+                                    <li><a href="zmajevoFGprilike.html"><div>Fizičko - Geografske prilike</div></a></li>
+                                    <li><a href="zmajevoDGprilike.html"><div>Društveno - Geografske prilike</div></a></li>
+                                    <li><a href="zmajevoSporodice.html"><div>Srpske starosedelačke porodice</div></a></li>
+                                    <li><a href="zmajevoKporodice.html"><div>Kolonizacija (spisak porodica)</div></a></li>
+                                    <li><a href="zmajevoPIdel.html"><div>Privredna i industrijska delatnost</div></a></li>
+                                    <li><a href="zmajevoDKdel.html"><div>Društvene i kulturne delatnosti</div></a></li>
+                                    <li><a href="zmajevoPhoto.html"><div>CRNO - BELE FOTOGRAFIJE</div></a></li>
+                                </span>
+                            </ul>
+                        </span>
+                    </li>
+                    <li><a class="current" href="contact.html">Kontakt</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="contact-form">
+        <div class="containerr">
+            <h1>Kontakritajte nas</h1>
+            <p>Popunite formular ispod da biste nas kontaktirali:</p>
+            <form action="process.php">
+                <div class="form-group">
+                    <label form="name">Ime i Prezime</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label form="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label form="message">Poruka</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Pošalji</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact-info">
+        <div class="box">
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h3>lokacija</h3>
+            <p>Ivana Milutinovića 49., Zmajevo SRB</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-phone fa-3x"></i>
+            <h3>broj telefona</h3>
+            <p>(+381) 021 / 725 - 190</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <h3>email </h3>
+            <p>frontdesk@hotelbt.com</p>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+
+    <footer id="main-footer">
+        <p>BAHUS &copy; 2022., All Rights Reserved
+            <br> Powered by: <a href="https://www.linkedin.com/in/luka-rudan-17848520b/">Luka Rudan</a>
+        </p>
+    </footer>
+</body>
+</html>

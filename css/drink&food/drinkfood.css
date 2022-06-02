@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(180, 142, 101);
+}
+
+.drink{
+    width: 85%;
+    height: 100%;
+    margin: 250px 150px;
+    border: 7.5px solid black;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.fotke{
+    width: 100%;
+}
+
+.prva{
+    margin-top: 90px;
+}
+.zadnja{
+    margin-bottom: 75px;
+}
+
+.izmedju{
+    width: 100.05%;
+    height: 75px;
+    margin-top: -10px;
+    background-image: url(/image/meni/bacchusbackground1.png);
+}

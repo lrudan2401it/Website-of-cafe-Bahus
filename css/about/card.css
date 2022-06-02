@@ -1,0 +1,122 @@
+#cards{
+    position: relative;
+    background: rgb(201, 174, 144);
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgb(199, 40, 0), rgb(250, 198, 0));
+    border-radius: 50%;
+    transform: translate(-350px, -120px);
+}
+
+#cards::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgb(250, 198, 0), rgb(244, 154, 58));
+    border-radius: 50%;
+    transform: translate(350px, 150px);
+}
+
+.boks{
+    position: relative;
+    width: 500px;
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    padding: 20px;
+    backdrop-filter: blur(25px);
+}
+
+.boks h3{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.boks h4 .dodatak{
+    color: rgb(250, 198, 0);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.boks h2 .dodatak{
+    color: #fff;
+    text-align: center;
+}
+
+.boks .list{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.boks #vlasnik{
+    margin-bottom: 50px;
+}
+
+.boks .list:hover{
+    background: #fff;
+    box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+    transform: scale(1.15) translateX(30px) translateY(-15px);
+    z-index: 1000;
+}
+
+.boks .list .imgBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.boks .list .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boks .list .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boks .list .content h4{
+    line-height: 1.2em;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.boks .list:hover .content h4{
+    color: #333;
+}

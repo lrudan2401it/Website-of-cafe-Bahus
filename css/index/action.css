@@ -1,0 +1,108 @@
+#home-action{
+    height: 800px;
+    width: 100%;
+    background: white/*-rgb(201, 174, 144)*/;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-action .card{
+    margin-bottom: 100px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    /*background: #ccc;*/
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#home-action .card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#home-action .card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: /*#d83133*/ rgb(236, 110, 11);
+    clip-path: circle(120px at center);
+    transition: 0.5s
+}
+
+#home-action .card:hover .circle::before{
+    background: /*#0065c3*/ rgb(250, 198, 0);
+    clip-path: circle(400px at center);
+}
+
+#home-action .card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#home-action .card:hover img{
+    left: 72%;
+    height: 500px;
+}
+
+#home-action .card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#home-action .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+#home-action .card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#home-action .card .content p{
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#home-action .card .content a{
+    position: relative;
+    color: #fff;
+    padding: /* coca cola: 10px 78px*/ 10px 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
